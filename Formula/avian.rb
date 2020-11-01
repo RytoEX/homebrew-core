@@ -5,6 +5,7 @@ class Avian < Formula
   sha256 "e3639282962239ce09e4f79f327c679506d165810f08c92ce23e53e86e1d621c"
   license "ISC"
   head "https://github.com/ReadyTalk/avian.git"
+  revision 1
 
   bottle do
     cellar :any
@@ -17,7 +18,7 @@ class Avian < Formula
     sha256 "20dd7125d138e05021b473d026190d8f4652e807afcfe057614e5c2e66ce0ed1" => :mavericks
   end
 
-  depends_on java: "1.8"
+  depends_on "openjdk@8"
 
   uses_from_macos "zlib"
 
