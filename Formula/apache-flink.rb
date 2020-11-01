@@ -7,6 +7,7 @@ class ApacheFlink < Formula
   sha256 "d8d22847e9aa8243373024e74f54f79f281541c4ea0b9034f177cdf290e5c0e0"
   license "Apache-2.0"
   head "https://github.com/apache/flink.git"
+  revision 1
 
   livecheck do
     url :stable
@@ -14,7 +15,7 @@ class ApacheFlink < Formula
 
   bottle :unneeded
 
-  depends_on java: "1.8"
+  depends_on "openjdk@8"
 
   def install
     rm_f Dir["bin/*.bat"]
